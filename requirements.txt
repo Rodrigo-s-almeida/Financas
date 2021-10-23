@@ -3,3 +3,4 @@ streamlit
 investpy
 plotly
 Pillow
+requests
