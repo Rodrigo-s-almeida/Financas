@@ -26,11 +26,6 @@ elif imc < 25:
 else:
     st.write('Resultado: Você está acima do peso')    
 
-#im_magro = Image.open('C:/Python/Streamlit/magro.jpg')    
-#im_normal = Image.open('C:/Python/Streamlit/emoji_legal.jpg')    
-#im_gordo = Image.open('C:/Python/Streamlit/emoji_polegar_para_baixo.jpg')    
-
-
 im_magro = Image.open(requests.get('https://raw.githubusercontent.com/Rodrigo-s-almeida/Financas/main/magro.jpg', stream=True).raw)    
 im_normal = Image.open(requests.get('https://raw.githubusercontent.com/Rodrigo-s-almeida/Financas/main/emoji_legal.jpg', stream=True).raw)      
 im_gordo = Image.open(requests.get('https://raw.githubusercontent.com/Rodrigo-s-almeida/Financas/main/emoji_polegar_para_baixo.jpg', stream=True).raw) 
