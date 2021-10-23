@@ -30,9 +30,9 @@ else:
 #im_gordo = Image.open('C:/Python/Streamlit/emoji_polegar_para_baixo.jpg')    
 
 
-im_magro = Image.open('https://github.com/Rodrigo-s-almeida/Financas/blob/main/magro.jpg')    
-im_normal = Image.open('https://github.com/Rodrigo-s-almeida/Financas/blob/main/emoji_legal.jpg')    
-im_gordo = Image.open('https://github.com/Rodrigo-s-almeida/Financas/blob/main/emoji_polegar_para_baixo.jpg') 
+im_magro = Image.open('https://github.com/Rodrigo-s-almeida/Financas/main/magro.jpg')    
+im_normal = Image.open('https://github.com/Rodrigo-s-almeida/Financas/main/emoji_legal.jpg')    
+im_gordo = Image.open('https://github.com/Rodrigo-s-almeida/Financas/main/emoji_polegar_para_baixo.jpg') 
 
 
 if imc < 18.5:
