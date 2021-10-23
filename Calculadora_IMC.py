@@ -1,5 +1,6 @@
 import streamlit as st
 import math
+from PIL import Image
 
 # título
 st.title("Calculadora de IMC")
@@ -23,3 +24,14 @@ elif imc < 25:
     st.write('Resultado: Você está dentro do peso')
 else:
     st.write('Resultado: Você está acima do peso')    
+
+im_magro = Image.open('C:/Python/Streamlit/magro.jpg')    
+im_normal = Image.open('C:/Python/Streamlit/emoji_legal.jpg')    
+im_gordo = Image.open('C:/Python/Streamlit/emoji_polegar_para_baixo.jpg')    
+
+if imc < 18.5:
+    st.image(im_magro)
+elif imc < 25:
+    st.image(im_normal)
+else:
+    st.image(im_gordo) 
