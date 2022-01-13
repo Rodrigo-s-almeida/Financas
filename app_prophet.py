@@ -19,8 +19,8 @@ st.sidebar.header('Escolha a ação')
 n_dias = st.slider('Quantidade de dias de previsão', 30, 365)
 
 def pegar_dados_acoes():
-    #path = 'C:/Python/Codifike - Cotacao_Historica/Streamlit/acoes.csv'
-    path = 'https://github.com/Rodrigo-s-almeida/Financas/blob/main/acoes.csv'
+    #path = 'https://github.com/Rodrigo-s-almeida/Financas/blob/main/acoes.csv'
+    path = 'https://raw.githubusercontent.com/Rodrigo-s-almeida/Financas/main/acoes.csv'
     return pd.read_csv(path, delimiter=';')
 
 df = pegar_dados_acoes()
