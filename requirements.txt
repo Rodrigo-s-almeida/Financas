@@ -5,3 +5,4 @@ plotly
 Pillow
 requests
 yfinance
+fbprophet
