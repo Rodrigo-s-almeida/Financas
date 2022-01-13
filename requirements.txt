@@ -4,3 +4,4 @@ investpy
 plotly
 Pillow
 requests
+yfinance
