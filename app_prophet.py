@@ -2,9 +2,7 @@ import streamlit as st
 import yfinance as yf
 from datetime import date
 import pandas as pd
-#from fbprophet import Prophet
 from prophet import Prophet
-#from fbprophet.plot import plot_plotly, plot_components_plotly
 from prophet.plot import plot_plotly, plot_components_plotly
 from plotly import graph_objs as go
 
@@ -19,7 +17,6 @@ st.sidebar.header('Escolha a ação')
 n_dias = st.slider('Quantidade de dias de previsão', 30, 365)
 
 def pegar_dados_acoes():
-    #path = 'https://github.com/Rodrigo-s-almeida/Financas/blob/main/acoes.csv'
     path = 'https://raw.githubusercontent.com/Rodrigo-s-almeida/Financas/main/acoes.csv'
     return pd.read_csv(path, delimiter=';')
 
