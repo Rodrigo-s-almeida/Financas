@@ -54,6 +54,33 @@ fig.add_trace(go.Scatter(x=df_valores['Date'],
 
 st.plotly_chart(fig)
 
+# Gráfico CandleStick
+
+def plotCandleStick():
+    trace1 = {
+        'x': df_valores.index,
+        'open': df_valores.Open,
+        'close': df_valores.Close,
+        'high': df_valores.High,
+        'low': df_valores.Low,
+        'type': 'candlestick',
+        'showlegend': False
+    }
+
+    data = [trace1]
+    layout = go.Layout()
+
+    fig = go.Figure(data=data, layout=layout)
+    return fig
+
+st.plotly_chart(plotCandleStick())
+
+
+
+
+
+
+
 # Previsão
 df_treino = df_valores[['Date', 'Close']]
 
