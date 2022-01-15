@@ -56,6 +56,8 @@ st.plotly_chart(fig)
 
 # Gráfico CandleStick
 
+st.subheader('Gráfico de Candle')
+
 def plotCandleStick():
     trace1 = {
         'x': df_valores.index,
@@ -74,10 +76,6 @@ def plotCandleStick():
     return fig
 
 st.plotly_chart(plotCandleStick())
-
-
-
-
 
 
 
