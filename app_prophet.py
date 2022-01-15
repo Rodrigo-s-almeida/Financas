@@ -56,7 +56,7 @@ st.plotly_chart(fig)
 
 # Gráfico CandleStick
 
-st.subheader('Gráfico de Candle')
+st.subheader('Gráfico de CandleStick')
 
 def plotCandleStick():
     trace1 = {
